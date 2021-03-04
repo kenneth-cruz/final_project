@@ -10,6 +10,11 @@
 
 ## LucidChart Diagram
 ![alt text](../final_project/screenshots/lucidchart.png)
+![alt text](https://github.com/kenneth-cruz/final_project/blob/main/screenshots/lucidchart.png)
+
+## Deployed!
+![alt text](../final_project/screenshots/deployed_app.png)
+
 ## Monitoring Process
 ![alt text](../final_project/screenshots/grafana-welcome-screen.png)
 

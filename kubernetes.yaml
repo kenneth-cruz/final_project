@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flaskapp
-        image: danyyanez/sba_kuber
+        image: kennethcruz/flask-app
         ports:
         - containerPort: 80
 ---
