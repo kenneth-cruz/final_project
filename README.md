@@ -9,17 +9,17 @@
 6. Grafana = dashboard visualization tool
 
 ## LucidChart Diagram
-![alt text](screenshots/lucidchart.png)
+![alt text](screenshots/lucidchart.png =100x20)
 
 ## Deployed!
-![alt text](/screenshots/deployed_app.png)
+![alt text](/screenshots/deployed_app.png =100x20)
 
 ## Monitoring Process
-![alt text](/screenshots/grafana-welcome-screen.png)
+![alt text](/screenshots/grafana-welcome-screen.png =100x20)
 
 ## Screenshots throughout the Process
 ### Grafana
-![alt text](/screenshots/CPU_usage.png)
+![alt text](/screenshots/CPU_usage.png =100x20)
 Deployment
 1. Minikube/Ansible to create Kubernetes Cluster
 2. Jenkins to deploy Flask Application into Kubernetes Cluster
