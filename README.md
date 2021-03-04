@@ -9,6 +9,7 @@
 6. Grafana = dashboard visualization tool
 
 ## LucidChart Diagram
+<img src="screenshots/lucidchart.png" alt="drawing" width="200" height="200"/>
 ![alt text](screenshots/lucidchart.png =100x20)
 
 ## Deployed!
