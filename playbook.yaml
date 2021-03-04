@@ -2,4 +2,4 @@
 - hosts: localhost
   tasks:
     - name: kubernetes cluster and deploy the app
-      command: kubectl apply -f kubernetes.yaml
+      command: /usr/local/bin/kubectl apply -f kubernetes.yaml
