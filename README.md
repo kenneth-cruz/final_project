@@ -1,6 +1,12 @@
 # Capstone Project Part 2
 
 ## Components in the Architecture
+1. Docker = containerization of the flask application
+2. Ansible = deployment of the application via playbook + kubectl
+3. Jenkins = CI/CD pipeline through a build script + repo connection
+4. Github = to house my repository
+5. Kubernetes(minikube) = pods for the application / grafana
+6. Grafana = dashboard visualization tool
 
 ## LucidChart Diagram
 
