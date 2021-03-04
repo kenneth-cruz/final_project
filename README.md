@@ -19,7 +19,7 @@
 
 ## Screenshots throughout the Process
 ### Grafana
-![alt text](screenshots/grafana-welcome-screen.png)
+![alt text](/screenshots/CPU_usage.png)
 Deployment
 1. Minikube/Ansible to create Kubernetes Cluster
 2. Jenkins to deploy Flask Application into Kubernetes Cluster
