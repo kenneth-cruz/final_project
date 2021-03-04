@@ -5,16 +5,24 @@ pipeline {
 		stage('Clean workspace'){
 			steps{
 				script{
-					sh 'rm -rf $PWD/final_project'
-					sh 'git clone https://github.com/kenneth-cruz/final_project.git' 						
+					sh 'rm -rf $PWD/final_project'						
 				}
 			}
 		}
-		
+			
+		stage('Cloning Repo'){
+			steps {
+				script{
+					sh 'git pull https://github.com/kenneth-cruz/final_project.git' 
+				}		
+			}
+		}
    				
-		stage('Ansible'){
+		stage('Deployment'){
 			steps{
-                ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', playbook: 'playbook.yaml'
+				script{
+  					sh '/Library/Frameworks/Python.framework/Versions/3.9/bin/ansible-playbook playbook.yaml'
+				}
   			}
 		}
 						
