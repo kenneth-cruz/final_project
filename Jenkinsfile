@@ -1,38 +1,36 @@
 pipeline {
-	agent any
+			agent any
 			
-	stages {
-		stage('Clean workspace'){
-			steps{
-				script{
-					sh 'rm -rf $PWD/final_project'						
+			stages {
+				stage('Clean workspace'){
+					steps{
+						script{
+							sh 'rm -rf $PWD/case2'						
+						}
+					}
 				}
-			}
-		}
-			
-		stage('Cloning Repo'){
-			steps {
-				script{
-					sh 'git pull https://github.com/kenneth-cruz/final_project.git' 
-				}		
-			}
-		}
-   				
-		stage('Deployment'){
-			steps{
-				script{
-  					sh '/usr/local/bin/ansible-playbook playbook.yaml'
+				stage('Cloning Git'){
+					steps {
+						script{
+							sh 'git clone https://github.com/Kajasaran/case2.git' 
+						}		
+					}
 				}
-  			}
-		}
-						
-		stage('Testing'){
+				
+	 
+   				stage('Deploy to playbook'){
+					steps{
+  						ansiblePlaybook installation: 'Ansible', playbook: 'playbook.yaml'
+  }
+}
+
+        						
+			stage('kube running succesfully'){
 				steps{
 					script {
-						sh 'sleep 10' 
-						sh 'kubectl get all --all-namespaces'
+						sh '/usr/local/bin/kubectl get services'
 					}
 				}				
+			}
 		}
 	}
-}
