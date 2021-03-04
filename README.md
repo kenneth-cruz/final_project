@@ -9,17 +9,18 @@
 6. Grafana = dashboard visualization tool
 
 ## LucidChart Diagram
-![alt text](final_project/screenshots/lucidchart.png)
+![alt text](../final_project/screenshots/lucidchart.png)
 ## Monitoring Process
+![alt text](../final_project/screenshots/grafana-welcome-screen.png)
 
 ## Screenshots throughout the Process
 
 Deployment
-1. Terraform to create Kubernetes Cluster
+1. Minikube/Ansible to create Kubernetes Cluster
 2. Jenkins to deploy Flask Application into Kubernetes Cluster
 
 Monitoring
-1. Kibana Dashboard (CPU, Memory, Disk Utilization and Flask App)
+1. Grafana Dashboard (CPU, Memory, Disk Utilization and Flask App)
 2. htop in a terminal showing utilization of the system.
 
 Stress Testing
