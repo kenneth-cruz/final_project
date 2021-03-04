@@ -28,10 +28,7 @@ pipeline {
 						
 		stage('Testing'){
 				steps{
-					script {
-						sh 'sleep 10' 
-						sh 'kubectl get all --all-namespaces'
-					}
+					ansiblePlaybook disableHostKeyChecking: true, playbook: 'playbook.yaml'
 				}				
 		}
 	}
