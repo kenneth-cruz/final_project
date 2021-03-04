@@ -5,30 +5,25 @@ pipeline {
 		stage('Clean workspace'){
 			steps{
 				script{
-					sh 'rm -rf $PWD/final_project'						
+					sh 'rm -rf $PWD/final_project'
+					sh 'git clone https://github.com/kenneth-cruz/final_project.git' 						
 				}
 			}
 		}
-			
-		stage('Cloning Repo'){
-			steps {
-				script{
-					sh 'git pull https://github.com/kenneth-cruz/final_project.git' 
-				}		
-			}
-		}
+		
    				
-		stage('Deployment'){
+		stage('Ansible'){
 			steps{
-				script{
-  					sh '/usr/local/bin/ansible-playbook playbook.yaml'
-				}
+                ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'playbook.yaml'
   			}
 		}
 						
 		stage('Testing'){
 				steps{
-					ansiblePlaybook disableHostKeyChecking: true, playbook: 'playbook.yaml'
+					script {
+						sh 'sleep 10' 
+						sh 'kubectl get all --all-namespaces'
+					}
 				}				
 		}
 	}
