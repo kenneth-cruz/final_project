@@ -9,7 +9,7 @@
 6. Grafana = dashboard visualization tool
 
 ## LucidChart Diagram
-
+![alt text](final_project/screenshots/lucidchart.png)
 ## Monitoring Process
 
 ## Screenshots throughout the Process
