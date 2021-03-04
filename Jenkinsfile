@@ -30,7 +30,7 @@ pipeline {
 				steps{
 					script {
 						sh 'sleep 10' 
-						sh 'kubectl get all --all-namespaces'
+						sh '/usr/local/bin/kubectl get all --all-namespaces'
 					}
 				}				
 		}
