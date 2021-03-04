@@ -10,16 +10,16 @@
 
 ## LucidChart Diagram
 ![alt text](screenshots/lucidchart.png)
-![alt text](https://github.com/kenneth-cruz/final_project/blob/main/screenshots/lucidchart.png)
 
 ## Deployed!
-![alt text](../final_project/screenshots/deployed_app.png)
+![alt text](/screenshots/deployed_app.png)
 
 ## Monitoring Process
-![alt text](../final_project/screenshots/grafana-welcome-screen.png)
+![alt text](/screenshots/grafana-welcome-screen.png)
 
 ## Screenshots throughout the Process
-
+### Grafana
+![alt text](screenshots/grafana-welcome-screen.png)
 Deployment
 1. Minikube/Ansible to create Kubernetes Cluster
 2. Jenkins to deploy Flask Application into Kubernetes Cluster
