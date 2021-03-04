@@ -14,7 +14,7 @@ pipeline {
    				
 		stage('Ansible'){
 			steps{
-                ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'playbook.yaml'
+                ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', playbook: 'playbook.yaml'
   			}
 		}
 						
